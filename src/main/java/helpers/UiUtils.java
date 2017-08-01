@@ -30,7 +30,8 @@ public class UiUtils {
 
     /**
      * Helper method to wait for a given webElement and check it's displayed
-     * @param webElement - WebElement webElement
+     *
+     * @param webElement        - WebElement webElement
      * @param waitTimeInSeconds - number of seconds to wait the webElement
      * @return - true or false
      */
@@ -44,8 +45,8 @@ public class UiUtils {
     /**
      * Helper method to wait for a given webElement and type the given text after it's displayed
      *
-     * @param webElement - WebElement webElement
-     * @param text - text to be typed
+     * @param webElement        - WebElement webElement
+     * @param text              - text to be typed
      * @param waitTimeInSeconds - number of seconds to wait the webElement
      */
     public static void typeTextAfterWait(WebElement webElement, int waitTimeInSeconds, String text) throws Exception {
@@ -60,12 +61,12 @@ public class UiUtils {
     /**
      * Helper method to wait for a given webElement and click it after it's displayed
      *
-     * @param webElement - WebElement webElement
+     * @param webElement        - WebElement webElement
      * @param waitTimeInSeconds - number of seconds to wait the object
      */
     public static void clickWebElementAfterWait(WebElement webElement, int waitTimeInSeconds) throws Exception {
         if (isWebElementIsDisplayed(webElement, waitTimeInSeconds)) {
-           webElement.click();
+            webElement.click();
         } else {
             throw new Exception("Cannot find WebElement " + webElement);
         }
@@ -74,7 +75,7 @@ public class UiUtils {
     /**
      * Helper method to wait for a given webElement and get text after it's displayed
      *
-     * @param webElement - WebElement webElement
+     * @param webElement        - WebElement webElement
      * @param waitTimeInSeconds - number of seconds to wait the webElement
      */
     public static String getTextAfterWait(WebElement webElement, int waitTimeInSeconds) throws Exception {

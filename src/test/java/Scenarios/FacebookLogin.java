@@ -28,15 +28,15 @@ public class FacebookLogin {
     @And("^Enter the username as testandroid(\\d+)@gmail.com and the password as qaqaqaqa(\\d+)$")
     public void enterTheUsernamAndThePassword(int arg0, int arg1) throws Exception {
         WebElement email = UiUtils.getWebElementByID("email");
-        WebElement password =  UiUtils.getWebElementByID("pass");
+        WebElement password = UiUtils.getWebElementByID("pass");
 
         // Validate the login fields
         Assert.assertTrue("The email field is not displayed", UiUtils.isWebElementIsDisplayed(email, 2));
         Assert.assertTrue("The passworld field is not displayed", UiUtils.isWebElementIsDisplayed(password, 2));
 
         // Enter the username and password
-        UiUtils.typeTextAfterWait(email, 0, "testandroid683@gmail.com" );
-        UiUtils.typeTextAfterWait(password, 0, "qaqaqaqa12" );
+        UiUtils.typeTextAfterWait(email, 0, "testandroid683@gmail.com");
+        UiUtils.typeTextAfterWait(password, 0, "qaqaqaqa12");
     }
 
     @And("^Click the login button$")
@@ -46,7 +46,7 @@ public class FacebookLogin {
 
     @Then("^Verify that the user is logged$")
     public void verifyThatTheUserIsLogged() throws Exception {
-        WebElement profile =  UiUtils.getWebElementByClassName("_2s25");
+        WebElement profile = UiUtils.getWebElementByClassName("_2s25");
         Assert.assertEquals("The user is logged in", UiUtils.getTextAfterWait(profile, 2), "John");
     }
 
