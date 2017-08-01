@@ -44,6 +44,12 @@
             <version>1.2.5</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>1.4.5</version>
+        </dependency>
     </dependencies>
 
     <!-- maven-compiler-plugin in order to build the project in JAVA 8-->
