@@ -32,4 +32,4 @@ And: And is used to combine two or more same type of action.
 
 3) Runner:
 
-To run the specific feature file cucumber uses standard Junit Runner and specify tags in @Cucumber. Options. Multiple tags can be given by using comma separate. 
+To run the specific feature file cucumber uses standard Junit Runner and specify tags in @Cucumber. Options. Multiple tags can be used, separated by comma. 
